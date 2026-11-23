@@ -3,162 +3,320 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Juan Elpidio López García · Ingeniero en Sistemas Computacionales</title>
-<meta name="description" content="Ingeniero en Sistemas Computacionales. Desarrollo full-stack, IoT en tiempo real, nube en AWS e IA aplicada.">
-<meta property="og:title" content="Juan Elpidio López García">
-<meta property="og:description" content="Ingeniero en Sistemas Computacionales · Full-Stack · IoT · Cloud · IA">
+<title>Juan Elpidio López García | Ingeniero en Sistemas Computacionales</title>
+<meta name="description" content="Ingeniero en Sistemas Computacionales. Desarrollo web full-stack, IoT en tiempo real, nube en AWS e IA aplicada.">
+<meta property="og:title" content="Juan Elpidio López García | Portafolio">
+<meta property="og:description" content="Full-Stack · IoT · AWS · IA aplicada. Proyectos desplegados y funcionando.">
 <meta property="og:image" content="assets/img/excavadora.png">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#07090c">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="nav">
-  <div class="wrap nav-in">
-    <a href="#" class="brand">Juan López</a>
-    <nav>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#skills">Skills</a>
-      <a href="#sobre">Sobre mí</a>
-      <a href="#contacto">Contacto</a>
-      <a href="cv.pdf" class="pill" download>CV</a>
-    </nav>
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+
+<div id="boot" aria-hidden="true">
+  <div class="boot-box">
+    <pre id="boot-text"></pre>
+    <button id="boot-skip" class="btn-ghost mono">Saltar / Skip</button>
   </div>
+</div>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="nav">
+  <a href="#inicio" class="logo mono">&lt;Juan<span>/&gt;</span></a>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#sobre">Sobre mí</a>
+    <a href="#skills">Skills</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <a href="cv.pdf" class="btn-ghost mono small" download>CV ↓</a>
 </header>
 
-<main>
+<main id="main">
 
-<section class="hero wrap">
-  <p class="kicker fade">Pachuca, México · Disponible</p>
-  <h1 class="fade">Ingeniero en Sistemas<br>Computacionales.</h1>
-  <p class="lead fade">Soy <b>Juan Elpidio López García</b>. Construyo software que funciona en el mundo real: aplicaciones web full-stack, APIs en la nube, sistemas IoT en tiempo real y automatización con inteligencia artificial.</p>
-  <div class="cta fade">
-    <a href="#proyectos" class="btn">Ver proyectos</a>
-    <a href="cv.pdf" class="btn line" download>Descargar CV</a>
+<!-- HERO -->
+<section id="inicio" class="hero">
+  <div class="hero-text reveal">
+    <p class="eyebrow mono">HOLA, SOY</p>
+    <h1><span class="grad anim">Juan Elpidio</span><br><span class="grad anim">López García</span></h1>
+    <h2>Ingeniero en Sistemas Computacionales</h2>
+    <p class="typed mono">&gt; <span id="typed">Desarrollador Full-Stack</span><span class="cursor">▍</span></p>
+    <p class="lead">Construyo aplicaciones web que se conectan con el mundo real: APIs en la nube, dispositivos IoT en tiempo real y asistentes con inteligencia artificial.</p>
+    <p class="status mono"><span class="dot"></span> Abierto a nuevas oportunidades</p>
+    <div class="cta">
+      <a href="#proyectos" class="btn">Ver proyectos</a>
+      <a href="#contacto" class="btn-ghost">Contáctame</a>
+    </div>
+    <div class="stats">
+      <div><b data-n="6">0</b><span>proyectos destacados</span></div>
+      <div><b data-n="3">0</b><span>demos en vivo</span></div>
+      <div><b data-n="21">0</b><span>servicios REST en AWS</span></div>
+    </div>
   </div>
-  <ul class="focus fade">
-    <li>Full-Stack</li><li>IoT</li><li>AWS</li><li>IA aplicada</li>
-  </ul>
+  <div class="hero-card reveal">
+    <div class="term glow">
+      <div class="term-bar"><i></i><i></i><i></i><span class="mono">juan@pachuca: ~</span></div>
+<pre class="mono"><span class="c">$</span> whoami
+Juan Elpidio López García
+<span class="c">$</span> cat perfil.json
+{
+  <span class="k">"titulo"</span>: <span class="s">"Ing. en Sistemas Computacionales"</span>,
+  <span class="k">"ubicacion"</span>: <span class="s">"Pachuca, Hgo., MX"</span>,
+  <span class="k">"stack"</span>: [<span class="s">"web"</span>, <span class="s">"iot"</span>, <span class="s">"aws"</span>, <span class="s">"ia"</span>],
+  <span class="k">"disponible"</span>: <span class="b">true</span>
+}
+<span class="c">$</span> <span class="cursor">▍</span></pre>
+    </div>
+  </div>
 </section>
 
-<section id="proyectos" class="wrap">
-  <div class="head fade">
-    <h2>Proyectos seleccionados</h2>
-    <p>Cuatro proyectos completos, de la base de datos al despliegue.</p>
-  </div>
+<!-- Cinta de tecnologías -->
+<div class="marquee mono" aria-hidden="true"><div class="track">
+  <span>JavaScript</span><span>Python</span><span>FastAPI</span><span>Node.js</span><span>PHP</span><span>MySQL</span><span>PostgreSQL</span><span>AWS EC2</span><span>Amazon RDS</span><span>WebSocket</span><span>ESP32</span><span>Three.js</span><span>WebXR</span><span>Claude Agent SDK</span><span>MCP</span><span>Gemini</span><span>Git</span><span>Bootstrap</span><span>Tailwind</span>
+  <span>JavaScript</span><span>Python</span><span>FastAPI</span><span>Node.js</span><span>PHP</span><span>MySQL</span><span>PostgreSQL</span><span>AWS EC2</span><span>Amazon RDS</span><span>WebSocket</span><span>ESP32</span><span>Three.js</span><span>WebXR</span><span>Claude Agent SDK</span><span>MCP</span><span>Gemini</span><span>Git</span><span>Bootstrap</span><span>Tailwind</span>
+</div></div>
 
-  <article class="proj fade">
-    <a class="shot" href="https://juanel2804.github.io/control-iot/" target="_blank" rel="noopener"><img src="assets/img/excavadora.png" alt="App de control de la excavadora IoT"></a>
-    <div class="info">
-      <span class="num">01</span>
-      <h3>Excavadora IoT controlada desde internet</h3>
-      <p>Sistema completo de control y monitoreo. Una app web instalable manda órdenes por WebSocket seguro a una API propia en AWS, y un ESP32 mueve la excavadora real. La API está hecha en Python con FastAPI: 21 servicios REST sobre Amazon RDS, con HTTPS y reinicio automático en EC2. Incluye monitoreo en vivo, gemelo digital 3D, control por voz con IA, gestos y realidad virtual.</p>
-      <ul class="tags"><li>FastAPI</li><li>WebSocket</li><li>AWS EC2 · RDS</li><li>ESP32</li><li>JavaScript</li><li>WebXR</li></ul>
+<!-- SOBRE MÍ -->
+<section id="sobre">
+  <h2 class="sec reveal">Sobre mí</h2>
+  <p class="sub reveal">Quién soy, cómo trabajo y qué me mueve.</p>
+  <div class="bento">
+    <article class="card spot perfil reveal">
+      <div class="avatar mono" aria-label="Foto de perfil">JL</div>
+      <p class="eyebrow mono">PERFIL</p>
+      <h3>Juan Elpidio López García</h3>
+      <p class="muted">Ingeniero en Sistemas Computacionales. Hago los proyectos completos: base de datos, API, interfaz y despliegue en la nube. Llevo la inteligencia artificial a problemas reales y la uso todos los días para trabajar mejor.</p>
       <div class="links">
-        <a href="https://juanel2804.github.io/control-iot/" target="_blank" rel="noopener">Ver demo ↗</a>
-        <a href="https://github.com/juanel2804/control-iot" target="_blank" rel="noopener">App ↗</a>
-        <a href="https://github.com/juanel2804/vehiculo-iot-api" target="_blank" rel="noopener">API ↗</a>
+        <a class="chip" href="https://www.linkedin.com/in/juan-elpidio-l%C3%B3pez-garc%C3%ADa-96310934a" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="chip" href="https://github.com/juanel2804" target="_blank" rel="noopener">GitHub</a>
+        <a class="chip" href="cv.pdf" download>Descargar CV</a>
       </div>
-    </div>
-  </article>
-
-  <article class="proj fade">
-    <div class="shot"><img src="assets/img/fastfood.png" alt="Inicio de la plataforma Fast Food Pachuca"></div>
-    <div class="info">
-      <span class="num">02</span>
-      <h3>Fast Food Pachuca</h3>
-      <p>Plataforma de pedidos en línea para varios restaurantes, al estilo de Rappi. Tiene carrito con productos de varias tiendas, cupones, propina, estado del pedido en vivo, carta en PDF, avisos por WhatsApp y un panel para que cada negocio administre productos y pedidos. Funciona con servicios SOAP y REST sobre MySQL, desplegada en AWS.</p>
-      <ul class="tags"><li>PHP</li><li>SOAP · REST</li><li>MySQL</li><li>AWS</li><li>PWA</li></ul>
-      <div class="links"><span>Demo bajo solicitud</span></div>
-    </div>
-  </article>
-
-  <article class="proj fade">
-    <div class="shot mock">
-      <div class="chat">
-        <div class="bar"><i></i><i></i><i></i><span>Kai</span></div>
-        <p class="u">recuérdame mañana a las 3 entregar el reporte</p>
-        <p class="a">Listo. Te llega al celular mañana a las 15:00.</p>
-        <p class="u">¿qué tengo pendiente esta semana?</p>
-        <p class="a">Tienes tres pendientes. El primero vence el jueves…</p>
-      </div>
-    </div>
-    <div class="info">
-      <span class="num">03</span>
-      <h3>Kai, asistente personal con IA</h3>
-      <p>Un agente de IA que uso todos los días. Lo hice con Node.js, Express y WebSocket, el Claude Agent SDK y herramientas MCP propias: tareas, recordatorios que llegan al celular, notas en Obsidian, voz con Gemini y control de dispositivos Android. Lo uso desde cualquier lugar con acceso seguro por Tailscale.</p>
-      <ul class="tags"><li>Node.js</li><li>Agentes de IA</li><li>MCP</li><li>Gemini</li><li>Automatización</li></ul>
-      <div class="links"><span>Código privado · demo bajo solicitud</span></div>
-    </div>
-  </article>
-
-  <article class="proj fade">
-    <div class="shot mock">
-      <div class="dash">
-        <div><small>Clientes</small><b>34</b></div>
-        <div><small>Pagos registrados</small><b>156</b></div>
-        <div><small>Roles</small><b>3</b></div>
-        <div class="w"><small>Bitácora</small><span>admin registró un pago · 10:24</span></div>
-      </div>
-    </div>
-    <div class="info">
-      <span class="num">04</span>
-      <h3>Sistema de control para un proveedor de internet</h3>
-      <p>Sistema web para un negocio real de internet. Lleva los clientes con su IP y MAC, los pagos mensuales, los equipos de red y una bitácora de auditoría. Tiene tres roles de usuario, contraseñas cifradas con scrypt y bloqueo tras varios intentos fallidos. Migré la información desde Excel: 34 clientes y 156 pagos.</p>
-      <ul class="tags"><li>Node.js</li><li>PostgreSQL</li><li>Seguridad</li><li>Control de roles</li></ul>
-      <div class="links"><span>Código privado · datos reales</span></div>
-    </div>
-  </article>
-</section>
-
-<section id="skills" class="wrap">
-  <div class="head fade">
-    <h2>Skills</h2>
-    <p>Lo que uso para construir.</p>
-  </div>
-  <div class="skills fade">
-    <div><h4>Frontend</h4><p>HTML5 · CSS3 · JavaScript ES6+ · Bootstrap 5 · Tailwind · Three.js · PWA</p></div>
-    <div><h4>Backend y APIs</h4><p>Python · FastAPI · Node.js · Express · PHP · REST · SOAP · WebSocket</p></div>
-    <div><h4>Bases de datos</h4><p>MySQL · procedimientos almacenados · vistas · PostgreSQL</p></div>
-    <div><h4>Nube</h4><p>AWS EC2 · Amazon RDS · HTTPS/WSS · Vercel · GitHub Pages</p></div>
-    <div><h4>Redes e IoT</h4><p>ESP32 · VLAN · STP · Cisco · comunicación en tiempo real</p></div>
-    <div><h4>IA y automatización</h4><p>Claude Agent SDK · MCP · Gemini · OpenAI · Prolog · Weka</p></div>
-    <div><h4>Herramientas</h4><p>Git · GitHub · VS Code · Postman · Swagger · MySQL Workbench</p></div>
-    <div><h4>Habilidades</h4><p>Resolución de problemas · trabajo en equipo · comunicación · aprendizaje continuo</p></div>
+    </article>
+    <article class="card spot reveal">
+      <p class="eyebrow mono">ENFOQUE</p>
+      <h3>Del código al mundo real</h3>
+      <p class="muted">Me gusta conectar software con hardware y con la nube: apps que mueven máquinas, APIs que corren 24/7 y agentes de IA que automatizan el día a día.</p>
+    </article>
+    <article class="card spot reveal">
+      <p class="eyebrow mono">UBICACIÓN</p>
+      <h3>Pachuca de Soto</h3>
+      <p class="muted">Hidalgo, México</p>
+      <p class="clock mono" id="clock">--:--</p>
+    </article>
+    <article class="card spot reveal">
+      <p class="eyebrow mono">CÓMO TRABAJO</p>
+      <ul class="mini">
+        <li>Entrego cosas que funcionan y se pueden probar</li>
+        <li>Documento y automatizo pruebas</li>
+        <li>Aprendo rápido lo que el proyecto necesite</li>
+      </ul>
+    </article>
+    <article class="card spot reveal">
+      <p class="eyebrow mono">FUERA DEL CÓDIGO</p>
+      <p class="muted">Entrenamiento de fuerza, mercados e inversión, y conocer gente nueva.</p>
+    </article>
   </div>
 </section>
 
-<section id="sobre" class="wrap about">
-  <div class="head fade"><h2>Sobre mí</h2></div>
-  <div class="about-grid fade">
-    <p>Soy Ingeniero en Sistemas Computacionales, formado en el <b>Tecnológico Nacional de México, Campus Pachuca</b>. Me gusta llevar los proyectos completos, de la base de datos a la nube, y conectar el software con hardware real. Aprendo rápido lo que cada proyecto necesita y entrego cosas que funcionan.</p>
-    <ul class="facts">
-      <li><span>Formación</span>Ing. en Sistemas Computacionales · TecNM Pachuca</li>
-      <li><span>Cursos</span>Redes · Cisco Networking Academy</li>
-      <li><span>Nube</span>AWS Academy · EC2 y RDS</li>
-      <li><span>Idiomas</span>Español nativo</li>
-    </ul>
+<!-- SKILLS -->
+<section id="skills">
+  <h2 class="sec reveal">Skills</h2>
+  <p class="sub reveal">Las tecnologías que uso en mis proyectos, agrupadas por área.</p>
+  <div class="skills">
+    <article class="skill spot reveal">
+      <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="m10 9-2 2 2 2m4-4 2 2-2 2"/></svg></div>
+      <h3>Desarrollo Web y Frontend</h3>
+      <ul class="tags mono"><li>HTML5</li><li>CSS3</li><li>JavaScript ES6+</li><li>Bootstrap 5</li><li>Tailwind</li><li>PWA</li></ul>
+    </article>
+    <article class="skill spot reveal">
+      <div class="ico"><svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="m8.2 10.8 7.6-3.6m-7.6 6 7.6 3.6"/></svg></div>
+      <h3>Backend y APIs</h3>
+      <ul class="tags mono"><li>Python · FastAPI</li><li>Node.js · Express</li><li>PHP</li><li>REST</li><li>SOAP</li><li>WebSocket</li></ul>
+    </article>
+    <article class="skill spot reveal">
+      <div class="ico"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div>
+      <h3>Bases de datos</h3>
+      <ul class="tags mono"><li>MySQL</li><li>Procedimientos almacenados</li><li>Vistas</li><li>PostgreSQL</li></ul>
+    </article>
+    <article class="skill spot reveal">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M7 18a5 5 0 1 1 1-9.9A6 6 0 0 1 19.5 10 4 4 0 0 1 18 18z"/></svg></div>
+      <h3>Nube y despliegue</h3>
+      <ul class="tags mono"><li>AWS EC2</li><li>Amazon RDS</li><li>HTTPS / WSS</li><li>Caddy</li><li>GitHub Pages</li><li>Vercel</li></ul>
+    </article>
+    <article class="skill spot reveal">
+      <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><path d="M8.5 8.5a5 5 0 0 0 0 7m7 0a5 5 0 0 0 0-7M5.6 5.6a9 9 0 0 0 0 12.8m12.8 0a9 9 0 0 0 0-12.8"/></svg></div>
+      <h3>Redes e IoT</h3>
+      <ul class="tags mono"><li>ESP32</li><li>VLAN</li><li>STP</li><li>Cisco</li><li>Tiempo real</li></ul>
+    </article>
+    <article class="skill spot reveal">
+      <div class="ico"><svg viewBox="0 0 24 24"><rect x="5" y="7" width="14" height="12" rx="3"/><path d="M12 3v4M9 12v1m6-1v1M9 16h6M2 12h3m14 0h3"/></svg></div>
+      <h3>IA y automatización</h3>
+      <ul class="tags mono"><li>Claude Agent SDK</li><li>MCP</li><li>Gemini API</li><li>OpenAI API</li><li>Prolog</li><li>Weka</li></ul>
+    </article>
+    <article class="skill spot reveal">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></div>
+      <h3>Herramientas</h3>
+      <ul class="tags mono"><li>Git · GitHub</li><li>VS Code</li><li>Postman</li><li>Swagger</li><li>MySQL Workbench</li><li>Packet Tracer</li></ul>
+    </article>
+    <article class="skill spot reveal">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.3 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg></div>
+      <h3>Habilidades</h3>
+      <ul class="tags mono soft"><li>Resolución de problemas</li><li>Aprendizaje continuo</li><li>Trabajo en equipo</li><li>Comunicación</li><li>Proactividad</li></ul>
+    </article>
   </div>
 </section>
 
-<section id="contacto" class="wrap contact fade">
-  <h2>¿Trabajamos juntos?</h2>
-  <a class="mail" href="mailto:juanelpidio2004@gmail.com">juanelpidio2004@gmail.com</a>
-  <div class="cta center">
-    <a class="btn" href="https://www.linkedin.com/in/juan-elpidio-l%C3%B3pez-garc%C3%ADa-96310934a" target="_blank" rel="noopener">LinkedIn</a>
-    <a class="btn line" href="https://github.com/juanel2804" target="_blank" rel="noopener">GitHub</a>
+<!-- PROYECTOS -->
+<section id="proyectos">
+  <h2 class="sec reveal">Proyectos</h2>
+  <p class="sub reveal">Proyectos completos, de la base de datos al despliegue. Los que dicen <span class="mono acc">Demo</span> se pueden probar en vivo.</p>
+  <div class="projects">
+
+    <article class="proj feat reveal">
+      <a class="shot" href="https://juanel2804.github.io/control-iot/" target="_blank" rel="noopener"><img src="assets/img/excavadora.png" alt="App de control de la Excavadora IoT con joysticks" loading="lazy"></a>
+      <div class="body">
+        <p class="eyebrow mono">IoT · CLOUD · TIEMPO REAL</p>
+        <h3>Excavadora IoT controlada desde internet</h3>
+        <p>Una app web instalable (PWA) manda órdenes por <b>WebSocket seguro</b> a una API en <b>AWS</b>, y un <b>ESP32</b> mueve la excavadora real. También tiene monitoreo en vivo, gemelo digital 3D, copiloto con IA por voz, control por gestos y realidad virtual (WebXR).</p>
+        <ul class="tags mono"><li>JavaScript</li><li>WebSocket</li><li>FastAPI</li><li>AWS EC2 + RDS</li><li>ESP32</li><li>WebXR</li></ul>
+        <div class="actions">
+          <a class="btn small" href="https://juanel2804.github.io/control-iot/" target="_blank" rel="noopener">Demo</a>
+          <a class="btn-ghost small" href="https://github.com/juanel2804/control-iot" target="_blank" rel="noopener">Código</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj reveal">
+      <a class="shot" href="https://juanel2804.github.io/vehiculo-iot-api/" target="_blank" rel="noopener"><img src="assets/img/retrox.png" alt="Panel RETRO-X con simulación 3D del vehículo" loading="lazy"></a>
+      <div class="body">
+        <p class="eyebrow mono">BACKEND · API REST</p>
+        <h3>API del vehículo IoT en AWS</h3>
+        <p>API en <b>Python + FastAPI</b> con POO: 21 servicios REST sobre procedimientos almacenados en <b>Amazon RDS</b>. Desplegada en <b>EC2</b> con HTTPS/WSS (Caddy + Let's Encrypt), documentación Swagger y reinicio automático.</p>
+        <ul class="tags mono"><li>Python</li><li>FastAPI</li><li>MySQL</li><li>Caddy</li><li>Swagger</li></ul>
+        <div class="actions">
+          <a class="btn small" href="https://juanel2804.github.io/vehiculo-iot-api/" target="_blank" rel="noopener">Demo</a>
+          <a class="btn-ghost small" href="https://github.com/juanel2804/vehiculo-iot-api" target="_blank" rel="noopener">Código</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj reveal">
+      <div class="shot"><img src="assets/img/fastfood.png" alt="Página de inicio de Fast Food Pachuca" loading="lazy"></div>
+      <div class="body">
+        <p class="eyebrow mono">FULL-STACK · E-COMMERCE</p>
+        <h3>Fast Food Pachuca</h3>
+        <p>Plataforma de pedidos para varios restaurantes, tipo Rappi. Tiene carrito de varias tiendas, cupones, propina, estado del pedido en vivo, carta en PDF, avisos por WhatsApp y panel para cada negocio. Desplegada en <b>AWS EC2 + RDS</b>. Proyecto en equipo.</p>
+        <ul class="tags mono"><li>PHP</li><li>SOAP</li><li>REST</li><li>MySQL</li><li>PWA</li></ul>
+        <div class="actions"><span class="note mono">Demo en vivo bajo solicitud</span></div>
+      </div>
+    </article>
+
+    <article class="proj reveal">
+      <div class="shot mock" aria-hidden="true">
+        <div class="mock-chat">
+          <div class="m-side"><b class="mono">Kai</b><span>💬 General</span><span>📁 Proyectos</span><span>⏰ Recordatorios</span></div>
+          <div class="m-main">
+            <p class="m-u">recuérdame mañana a las 3 entregar el reporte</p>
+            <p class="m-a">Listo ✅ Te llega al celular mañana a las 15:00.</p>
+            <p class="m-u">buenos días</p>
+            <p class="m-a">Tus pendientes de hoy y el clima de Pachuca ☀️</p>
+          </div>
+        </div>
+      </div>
+      <div class="body">
+        <p class="eyebrow mono">IA · AGENTES · AUTOMATIZACIÓN</p>
+        <h3>Kai: mi asistente personal con IA</h3>
+        <p>Asistente que uso todos los días, con chats separados por tema. Usa <b>Node.js + Express + WebSocket</b> con el <b>Claude Agent SDK</b> y herramientas <b>MCP</b> que hice yo: tareas, recordatorios al celular (ntfy), notas en Obsidian, voz con Gemini y control de Android. Lo abro desde cualquier lugar con Tailscale.</p>
+        <ul class="tags mono"><li>Node.js</li><li>Claude Agent SDK</li><li>MCP</li><li>Gemini</li><li>Tailscale</li></ul>
+        <div class="actions"><span class="note mono">Código privado · demo bajo solicitud</span></div>
+      </div>
+    </article>
+
+    <article class="proj reveal">
+      <div class="shot mock isp" aria-hidden="true">
+        <div class="isp-grid">
+          <div><small>Clientes</small><b>34</b></div>
+          <div><small>Pagos</small><b>156</b></div>
+          <div><small>Roles</small><b>3</b></div>
+          <div class="wide"><small>Auditoría</small><span class="mono">admin registró pago · 10:24</span></div>
+        </div>
+      </div>
+      <div class="body">
+        <p class="eyebrow mono">SISTEMA REAL · BACKEND</p>
+        <h3>Control de clientes de internet</h3>
+        <p>Sistema web para el negocio familiar de internet: clientes con IP/MAC, pagos mensuales, equipos de red y bitácora de auditoría. Tiene 3 roles, contraseñas cifradas con scrypt y bloqueo tras varios intentos fallidos. Pasé los datos del Excel: 34 clientes y 156 pagos.</p>
+        <ul class="tags mono"><li>Node.js</li><li>PostgreSQL</li><li>Seguridad</li><li>Roles</li></ul>
+        <div class="actions"><span class="note mono">Código privado (datos reales)</span></div>
+      </div>
+    </article>
+
+    <article class="proj reveal">
+      <a class="shot" href="https://juanel2804.github.io/supervillanos-difuso/web/index.html" target="_blank" rel="noopener"><img src="assets/img/supervillanos.png" alt="Portada del sistema experto ¿Quién es el supervillano?" loading="lazy"></a>
+      <div class="body">
+        <p class="eyebrow mono">INTELIGENCIA ARTIFICIAL</p>
+        <h3>¿Quién es el supervillano?</h3>
+        <p>Sistema experto en <b>Prolog</b> con <b>lógica difusa</b> (Mamdani): cada pista tiene un grado de verdad y cada sospechoso es culpable "en cierto grado". Tiene interfaz web y presentación interactiva. Proyecto en equipo.</p>
+        <ul class="tags mono"><li>Prolog</li><li>Lógica difusa</li><li>Python</li><li>HTML/CSS</li></ul>
+        <div class="actions">
+          <a class="btn small" href="https://juanel2804.github.io/supervillanos-difuso/web/index.html" target="_blank" rel="noopener">Demo</a>
+          <a class="btn-ghost small" href="https://github.com/juanel2804/supervillanos-difuso" target="_blank" rel="noopener">Código</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+  <p class="foot-note muted mono reveal">* La API del vehículo corre en un laboratorio de AWS. Si está apagado, las demos entran en modo simulador.</p>
+</section>
+
+<!-- FORMACIÓN -->
+<section id="formacion">
+  <h2 class="sec reveal">Formación</h2>
+  <div class="timeline">
+    <div class="tl reveal">
+      <p class="eyebrow mono">INGENIERÍA</p>
+      <h3>Ingeniería en Sistemas Computacionales</h3>
+      <p class="muted">Tecnológico Nacional de México · Campus Pachuca</p>
+    </div>
+    <div class="tl reveal">
+      <p class="eyebrow mono">2026</p>
+      <h3>Curso de Redes · Cisco Networking Academy</h3>
+      <p class="muted">VLAN, STP y enrutamiento con equipo Cisco.</p>
+    </div>
+    <div class="tl reveal">
+      <p class="eyebrow mono">2026</p>
+      <h3>AWS Academy</h3>
+      <p class="muted">Despliegue de aplicaciones reales en EC2 y Amazon RDS.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="contact reveal">
+  <div class="contact-box spot">
+    <h2 class="sec">¿Trabajamos juntos?</h2>
+    <p class="sub">¿Tienes una vacante o un proyecto? Escríbeme y platicamos.</p>
+    <a class="mail mono grad" href="mailto:juanelpidio2004@gmail.com">juanelpidio2004@gmail.com</a>
+    <div class="cta center">
+      <a class="btn" href="https://www.linkedin.com/in/juan-elpidio-l%C3%B3pez-garc%C3%ADa-96310934a" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn-ghost" href="https://github.com/juanel2804" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn-ghost" href="cv.pdf" download>Descargar CV</a>
+    </div>
   </div>
 </section>
 
 </main>
 
-<footer class="wrap foot">
-  <span>© 2026 Juan Elpidio López García</span>
-  <span>Pachuca, México</span>
+<footer class="footer mono">
+  <span>© 2026 Juan Elpidio López García · Pachuca, México</span>
+  <span>Hecho a mano con HTML, CSS y JavaScript</span>
 </footer>
 
 <script src="app.js"></script>
