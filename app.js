@@ -1,6 +1,6 @@
 // Intro tipo terminal (solo la primera vez por sesión)
 (() => {
-  const boot = document.getElementById('boot');
+  const boot = document.getElementById('boot'); if (!boot) return;
   const out = document.getElementById('boot-text');
   const lines = ['> iniciando portafolio...', '> cargando proyectos [IoT, AWS, IA]', '> conectando con Pachuca, MX', '> sistema listo. ok'];
   const close = () => { boot.classList.add('off'); sessionStorage.setItem('boot', '1'); };
