@@ -24,6 +24,36 @@ hora(); setInterval(hora, 20000);
 const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
+// Rol que se escribe solo
+(() => {
+  const el = document.getElementById('typed');
+  const roles = ['Desarrollador Full-Stack', 'Soluciones IoT en tiempo real', 'Nube en AWS', 'IA aplicada y agentes'];
+  let r = 0, c = roles[0].length, borrando = true;
+  const paso = () => {
+    const t = roles[r];
+    if (borrando) { c--; if (c <= 0) { borrando = false; r = (r + 1) % roles.length; } }
+    else { c++; if (c >= roles[r].length) { borrando = true; return setTimeout(paso, 1800); } }
+    el.textContent = roles[r].slice(0, c) || t.slice(0, 0);
+    setTimeout(paso, borrando ? 35 : 70);
+  };
+  setTimeout(paso, 2200);
+})();
+
+// Contadores
+const cnt = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  const n = +e.target.dataset.n; let i = 0;
+  const t = setInterval(() => { e.target.textContent = ++i; if (i >= n) clearInterval(t); }, 900 / n);
+  cnt.unobserve(e.target);
+}));
+document.querySelectorAll('[data-n]').forEach(b => cnt.observe(b));
+
+// Luz que sigue al mouse en tarjetas
+document.querySelectorAll('.spot, .proj').forEach(el => el.classList.add('spot') || el.addEventListener('pointermove', ev => {
+  const b = el.getBoundingClientRect();
+  el.style.setProperty('--x', ev.clientX - b.left + 'px'); el.style.setProperty('--y', ev.clientY - b.top + 'px');
+}));
+
 // Marcar sección activa en el menú
 const links = [...document.querySelectorAll('.nav nav a')];
 const spy = new IntersectionObserver(es => es.forEach(e => {

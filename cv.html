@@ -3,155 +3,156 @@
 <head>
 <meta charset="utf-8">
 <title>CV · Juan Elpidio López García</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--v1:#2a1a6e;--v2:#4c1d95;--ac:#6d28d9;--ac2:#7c3aed;--tx:#1e1b2e;--mu:#4b4763;--soft:#f4f1fd;--line:#ddd5f7}
+:root{--v0:#140c38;--v1:#25155f;--v2:#3b1f8f;--ac:#6d28d9;--ac2:#7c3aed;--tx:#16132a;--mu:#3f3b55;--soft:#efe9fe;--line:#e2d9fb}
 @page{size:Letter;margin:0}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Inter,sans-serif;color:var(--tx);background:#e9e6f3;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.page{width:8.5in;height:11in;margin:0 auto;background:#fff;display:grid;grid-template-columns:2.45in 1fr;grid-template-rows:1fr auto;overflow:hidden;position:relative}
-@media print{body{background:#fff}.page{margin:0}}
-/* lateral */
-aside{background:linear-gradient(180deg,#1a1240 0%,var(--v1) 55%,var(--v2) 100%);color:#fff;padding:.42in .28in .3in;border-radius:0 0 34px 0;display:flex;flex-direction:column;gap:.2in;position:relative;overflow:hidden}
-aside::after{content:"";position:absolute;left:-30%;right:-30%;bottom:-60px;height:170px;background:radial-gradient(ellipse at center,#8b5cf6aa,transparent 70%)}
-.foto{width:1.55in;height:1.55in;border-radius:50%;margin:0 auto;border:4px solid #fff;background:linear-gradient(135deg,#7c3aed,#22d3ee);display:grid;place-items:center;font-size:40px;font-weight:800;overflow:hidden}
+.page{width:8.5in;height:11in;margin:0 auto;background:#fdfcff;display:grid;grid-template-columns:2.62in 1fr;grid-template-rows:1fr auto;overflow:hidden}
+@media print{body{background:#fff}}
+svg{fill:none;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- lateral ---------- */
+aside{position:relative;background:linear-gradient(170deg,#5b21b6 0%,var(--v1) 22%,var(--v0) 60%,var(--v1) 100%);color:#fff;
+  padding:.3in .26in 0;border-radius:0 0 44px 0;display:flex;flex-direction:column;overflow:hidden}
+aside .wave{position:absolute;left:0;right:0;bottom:0;height:1.35in}
+.foto{width:1.9in;height:1.9in;border-radius:50%;margin:0 auto .22in;border:5px solid #fff;box-shadow:0 0 0 3px #8b5cf6,0 10px 30px #0008;
+  background:linear-gradient(135deg,#7c3aed,#22d3ee);display:grid;place-items:center;font-size:52px;font-weight:900;overflow:hidden}
 .foto img{width:100%;height:100%;object-fit:cover}
-.nombre{font-size:23px;font-weight:800;line-height:1.12}
-.rol{font-size:12.5px;color:#d9d2ff;margin-top:6px;padding-top:8px;border-top:2px solid #8b5cf6;line-height:1.35}
-.contacto{list-style:none;display:grid;gap:9px;font-size:10.2px}
-.contacto li{display:flex;gap:8px;align-items:flex-start;word-break:break-all}
-.contacto svg{flex:none;width:14px;height:14px;margin-top:1px;stroke:#c4b5fd;fill:none;stroke-width:2}
+.nombre{font-size:27px;font-weight:900;line-height:1.08;letter-spacing:-.01em}
+.bar{width:1.05in;height:3px;background:#8b5cf6;border-radius:3px;margin:12px 0 10px}
+.rol{font-size:15px;color:#e6e0ff;line-height:1.3}
+.bar.s{width:.45in;margin:12px 0 18px}
+.contacto{list-style:none;display:grid;gap:12px;font-size:10.6px}
+.contacto li{display:flex;gap:10px;align-items:center;word-break:break-word;line-height:1.3}
+.contacto svg{flex:none;width:17px;height:17px;stroke:#c4b5fd;stroke-width:2}
 .contacto a{color:#fff;text-decoration:none}
-.side-h{font-size:13px;font-weight:800;letter-spacing:.04em;display:flex;align-items:center;gap:7px;padding-top:12px;border-top:2px solid #ffffff33}
-.side-p{font-size:10.6px;line-height:1.5;color:#ece8ff}
-.side-list{list-style:none;display:grid;gap:4px;font-size:10.6px;color:#ece8ff}
-.side-list li::before{content:"▸ ";color:#a78bfa}
-/* principal */
-main{padding:.36in .36in .14in .3in;display:flex;flex-direction:column;gap:.15in}
-h2{font-size:15px;font-weight:800;letter-spacing:.02em;display:flex;align-items:center;gap:8px;color:var(--tx);margin-bottom:6px}
-h2::after{content:"";flex:1;height:2px;background:var(--ac2);margin-left:8px}
-h2 svg{width:19px;height:19px;stroke:var(--ac);fill:none;stroke-width:2}
-.perfil{font-size:10.8px;line-height:1.5;color:var(--mu)}
-.perfil b{color:var(--ac)}
-.comp{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
-.comp div{border:1.5px solid var(--line);border-radius:10px;padding:7px 8px;background:#fcfbff}
-.comp h4{font-size:10.4px;color:var(--v1);margin-bottom:2px}
-.comp p{font-size:9.3px;line-height:1.35;color:var(--mu)}
-.proj{display:grid;grid-template-columns:1.32in 1fr;gap:10px;align-items:center;margin-bottom:8px}
-.proj img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;border-radius:8px;border:1.5px solid var(--line);box-shadow:0 3px 10px #4c1d9522}
-.proj h3{font-size:12px;color:var(--ac);font-weight:800}
-.proj p{font-size:9.7px;line-height:1.38;color:var(--mu);margin:2px 0 4px}
-.tags{display:flex;flex-wrap:wrap;gap:4px}
-.tags span{font-size:8.6px;font-weight:600;padding:2px 7px;border-radius:6px;background:var(--soft);color:var(--v2)}
-.proj .url{font-size:8.6px;color:var(--ac2);text-decoration:none;margin-left:4px}
-.edu{border-left:2px solid var(--ac2);padding-left:12px;position:relative}
-.edu::before{content:"";position:absolute;left:-6px;top:3px;width:10px;height:10px;border-radius:50%;background:var(--v2)}
-.edu h3{font-size:12px}.edu p{font-size:10.4px;color:var(--mu)}
-/* franja inferior */
-.bottom{grid-column:1/3;margin:0 .3in .28in;border:1.5px solid var(--line);border-radius:14px;padding:10px 14px;display:grid;grid-template-columns:1.25fr .8fr 1fr;gap:14px;background:#fcfbff}
+.sep{height:2px;background:#8b5cf6aa;border-radius:2px;margin:18px 0 14px}
+.side-h{font-size:17px;font-weight:900;display:flex;align-items:center;gap:9px;letter-spacing:.02em}
+.side-h svg{width:24px;height:24px;stroke:#c4b5fd;stroke-width:2}
+.side-p{font-size:11.6px;line-height:1.55;color:#eeeaff;margin-top:10px;position:relative;z-index:1}
+
+/* ---------- principal ---------- */
+main{padding:.3in .32in .1in .3in;display:flex;flex-direction:column;gap:.14in}
+h2{font-size:17px;font-weight:900;letter-spacing:.01em;display:flex;align-items:center;gap:10px;margin-bottom:7px;text-transform:uppercase}
+h2::after{content:"";flex:1;height:2px;background:var(--ac2);margin-left:10px;border-radius:2px}
+h2 svg{width:24px;height:24px;stroke:var(--ac);stroke-width:2}
+.perfil{font-size:11.2px;line-height:1.5;color:var(--mu)}
+.perfil b{color:var(--ac);font-weight:700}
+.comp{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.comp>div{border:1.5px solid var(--line);border-radius:12px;padding:8px 9px;background:#fff;box-shadow:0 2px 8px #6d28d90f}
+.comp .h{display:flex;gap:8px;align-items:center;margin-bottom:4px}
+.comp .h svg{flex:none;width:26px;height:26px;stroke:var(--ac);stroke-width:1.8}
+.comp h4{font-size:10.8px;font-weight:800;line-height:1.2}
+.comp p{font-size:9.6px;line-height:1.38;color:var(--mu)}
+.proj{display:grid;grid-template-columns:1.55in 1fr;gap:12px;align-items:center;margin-bottom:9px}
+.thumb{border-radius:9px;border:1.5px solid var(--line);box-shadow:0 4px 14px #4c1d9530;overflow:hidden;aspect-ratio:16/10;background:#fff}
+.thumb img{width:100%;height:100%;object-fit:cover;object-position:top}
+.proj h3{font-size:13px;color:var(--ac);font-weight:800}
+.proj p{font-size:9.9px;line-height:1.4;color:var(--mu);margin:3px 0 5px}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tags span{font-size:9px;font-weight:700;padding:3px 9px;border-radius:7px;background:var(--soft);color:var(--v2)}
+.edu{border-left:2px solid #c4b5fd;padding-left:14px;position:relative;margin-left:5px}
+.edu::before{content:"";position:absolute;left:-7px;top:2px;width:12px;height:12px;border-radius:50%;background:var(--v2)}
+.edu h3{font-size:12.5px;font-weight:800}.edu p{font-size:10.6px;color:var(--mu);margin-top:2px}
+
+/* ---------- franja inferior ---------- */
+.bottom{grid-column:1/3;margin:.12in .3in .24in;border:1.5px solid var(--line);border-radius:16px;padding:12px 16px;display:grid;grid-template-columns:1.25fr .85fr 1.1fr;gap:14px;background:#fff;box-shadow:0 2px 10px #6d28d90f}
 .bottom>div+div{border-left:1.5px solid var(--line);padding-left:14px}
-.bottom h4{font-size:11.5px;font-weight:800;margin-bottom:5px;color:var(--tx);display:flex;align-items:center;gap:6px}
-.bottom h4 svg{width:17px;height:17px;stroke:var(--ac);fill:none;stroke-width:2}
-.bottom ul{list-style:disc;padding-left:15px;font-size:9.8px;line-height:1.5;color:var(--mu)}
+.bottom h4{font-size:12.5px;font-weight:900;margin-bottom:6px;display:flex;align-items:center;gap:8px;line-height:1.15;text-transform:uppercase}
+.bottom h4 svg{flex:none;width:26px;height:26px;stroke:var(--ac);stroke-width:1.8}
+.bottom ul{list-style:disc;padding-left:16px;font-size:10.3px;line-height:1.55;color:var(--tx)}
 </style>
 </head>
 <body>
 <div class="page">
   <aside>
     <div class="foto">JL<!-- Reemplazar por: <img src="assets/img/foto.jpg" alt=""> --></div>
-    <div>
-      <div class="nombre">Juan Elpidio<br>López García</div>
-      <div class="rol">Desarrollador Full-Stack · IoT · Cloud<br>Ing. en Sistemas Computacionales</div>
-    </div>
+    <div class="nombre">Juan Elpidio<br>López García</div>
+    <div class="bar"></div>
+    <div class="rol">Ingeniero en Sistemas Computacionales</div>
+    <div class="bar s"></div>
     <ul class="contacto">
       <li><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:juanelpidio2004@gmail.com">juanelpidio2004@gmail.com</a></li>
       <li><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Pachuca, Hgo., México</li>
-      <li><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg><a href="https://www.linkedin.com/in/juan-elpidio-l%C3%B3pez-garc%C3%ADa-96310934a">linkedin.com/in/juan-elpidio-lópez-garcía-96310934a</a></li>
+      <li><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg><a href="https://www.linkedin.com/in/juan-elpidio-l%C3%B3pez-garc%C3%ADa-96310934a">in/juan-elpidio-lópez-garcía</a></li>
       <li><svg viewBox="0 0 24 24"><path d="M9 19c-4 1.3-4-2-6-2.5m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg><a href="https://github.com/juanel2804">github.com/juanel2804</a></li>
-      <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span id="web">Portafolio: <a href="https://juanel2804.github.io/portafolio/">juanel2804.github.io/portafolio</a></span></li>
+      <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><a href="https://juanel2804.github.io/portafolio/">juanel2804.github.io/portafolio</a></li>
     </ul>
-    <div>
-      <div class="side-h">OBJETIVO</div>
-      <p class="side-p" style="margin-top:6px">Hacer mi residencia profesional en un equipo de desarrollo de software, nube o IoT. Quiero aportar en proyectos reales desde el primer día y seguir creciendo como ingeniero.</p>
-    </div>
-    <div>
-      <div class="side-h">HERRAMIENTAS</div>
-      <ul class="side-list" style="margin-top:6px">
-        <li>Git · GitHub · VS Code</li>
-        <li>Postman · Swagger</li>
-        <li>MySQL Workbench</li>
-        <li>Cisco Packet Tracer · Weka</li>
-      </ul>
-    </div>
+    <div class="sep"></div>
+    <div class="side-h"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/><path d="m15 9 5-5M17 4h3v3"/></svg>OBJETIVO</div>
+    <p class="side-p">Crear soluciones tecnológicas que resuelvan problemas reales, desde la base de datos hasta la nube, y sumar a equipos que construyen productos de impacto mientras sigo creciendo profesionalmente.</p>
+    <svg class="wave" viewBox="0 0 250 130" preserveAspectRatio="none"><path d="M0 60 C60 20 120 90 250 30 V130 H0z" fill="#7c3aed" opacity=".55"/><path d="M0 90 C80 50 150 120 250 70 V130 H0z" fill="#5b21b6" opacity=".7"/></svg>
   </aside>
 
   <main>
     <section>
-      <h2><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>PERFIL PROFESIONAL</h2>
-      <p class="perfil">Estudiante de 9.º semestre de Ingeniería en Sistemas Computacionales. Desarrollo aplicaciones <b>full-stack</b> de punta a punta: base de datos, API, interfaz y <b>despliegue en AWS</b>. Tengo experiencia práctica en <b>IoT en tiempo real</b> (WebSocket + ESP32) y en <b>IA aplicada</b>: agentes, integración de LLMs y sistemas expertos. Uso a diario un asistente con IA que construí yo. Aprendo rápido, soy autodidacta y entrego cosas que funcionan.</p>
+      <h2><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>Perfil profesional</h2>
+      <p class="perfil">Ingeniero en Sistemas Computacionales enfocado en <b>desarrollo full-stack</b>, <b>nube en AWS</b> e <b>Internet de las Cosas</b>. Construyo soluciones completas: base de datos, APIs REST y WebSocket, interfaces web y despliegue en producción. Integro <b>inteligencia artificial generativa, agentes y automatización</b> en proyectos reales. Me destaco por resolver problemas, aprender rápido y entregar soluciones que funcionan.</p>
     </section>
 
     <section>
-      <h2><svg viewBox="0 0 24 24"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>COMPETENCIAS TÉCNICAS</h2>
+      <h2><svg viewBox="0 0 24 24"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>Competencias técnicas</h2>
       <div class="comp">
-        <div><h4>Frontend</h4><p>HTML5, CSS3, JavaScript (ES6+), Bootstrap 5, Tailwind, Three.js, PWA.</p></div>
-        <div><h4>Backend y APIs</h4><p>Python (FastAPI), Node.js (Express), PHP, REST, SOAP, WebSocket.</p></div>
-        <div><h4>Bases de datos</h4><p>MySQL (procedimientos almacenados, vistas), PostgreSQL.</p></div>
-        <div><h4>Nube y despliegue</h4><p>AWS EC2 y RDS, HTTPS/WSS con Caddy, GitHub Pages, Vercel.</p></div>
-        <div><h4>Redes e IoT</h4><p>ESP32, VLAN, STP, fundamentos de redes Cisco.</p></div>
-        <div><h4>IA y automatización</h4><p>Claude Agent SDK, MCP, APIs de Gemini y OpenAI, Prolog, Weka.</p></div>
+        <div><div class="h"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="m10 9-2 2 2 2m4-4 2 2-2 2"/></svg><h4>Desarrollo Web y Frontend</h4></div><p>HTML5, CSS3, JavaScript (ES6+), Bootstrap 5, Tailwind CSS, Three.js, PWA.</p></div>
+        <div><div class="h"><svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="m8.2 10.8 7.6-3.6m-7.6 6 7.6 3.6"/></svg><h4>Backend y APIs</h4></div><p>Python (FastAPI), Node.js (Express), PHP, REST, SOAP, WebSocket.</p></div>
+        <div><div class="h"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg><h4>Bases de Datos y Nube</h4></div><p>MySQL (procedimientos y vistas), PostgreSQL, AWS EC2 y Amazon RDS.</p></div>
+        <div><div class="h"><svg viewBox="0 0 24 24"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="9" r="2"/><path d="M6 7v10M18 11c0 4-6 3-12 6"/></svg><h4>Herramientas de Desarrollo</h4></div><p>Git, GitHub, VS Code, Postman, Swagger, despliegue en Vercel y GitHub Pages.</p></div>
+        <div><div class="h"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><path d="M8.5 8.5a5 5 0 0 0 0 7m7 0a5 5 0 0 0 0-7M5.6 5.6a9 9 0 0 0 0 12.8m12.8 0a9 9 0 0 0 0-12.8"/></svg><h4>Redes e IoT</h4></div><p>ESP32, VLAN, STP, Cisco Packet Tracer, comunicación en tiempo real.</p></div>
+        <div><div class="h"><svg viewBox="0 0 24 24"><rect x="5" y="7" width="14" height="12" rx="3"/><path d="M12 3v4M9 12v1m6-1v1M9 16h6M2 12h3m14 0h3"/></svg><h4>IA y Automatización</h4></div><p>IA generativa, agentes (Claude Agent SDK, MCP), APIs de Gemini y OpenAI, Prolog, Weka.</p></div>
       </div>
     </section>
 
     <section>
-      <h2><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></svg>PROYECTOS DESTACADOS</h2>
+      <h2><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></svg>Proyectos destacados</h2>
       <div class="proj">
-        <img src="assets/img/excavadora.png" alt="">
+        <div class="thumb"><img src="assets/img/excavadora.png" alt=""></div>
         <div>
-          <h3>Excavadora IoT controlada desde internet <a class="url" href="https://juanel2804.github.io/control-iot/">ver demo ↗</a></h3>
-          <p>App web (PWA) que manda órdenes por WebSocket seguro a una API FastAPI en AWS EC2 (21 servicios REST sobre Amazon RDS); un ESP32 mueve la excavadora real. Incluye monitoreo en vivo, gemelo digital 3D, IA por voz y realidad virtual.</p>
-          <div class="tags"><span>FastAPI</span><span>WebSocket</span><span>AWS EC2 + RDS</span><span>ESP32</span><span>WebXR</span></div>
+          <h3>Sistema de Control y Monitoreo IoT</h3>
+          <p>Excavadora controlada desde internet: app web (PWA) que manda órdenes por WebSocket seguro a una API FastAPI en AWS EC2 con 21 servicios REST sobre Amazon RDS; un ESP32 mueve la máquina real. Incluye monitoreo en tiempo real, gemelo digital 3D, IA por voz y realidad virtual.</p>
+          <div class="tags"><span>FastAPI</span><span>WebSocket</span><span>AWS</span><span>ESP32</span><span>IoT</span></div>
         </div>
       </div>
       <div class="proj">
-        <img src="assets/img/fastfood.png" alt="">
+        <div class="thumb"><img src="assets/img/fastfood.png" alt=""></div>
         <div>
-          <h3>Fast Food Pachuca · pedidos en línea</h3>
-          <p>Plataforma tipo Rappi para varios restaurantes: carrito de varias tiendas, cupones, estado del pedido en vivo, carta en PDF, avisos por WhatsApp y panel por negocio. Desplegada en AWS (EC2 + RDS). Proyecto en equipo.</p>
+          <h3>Plataforma de Pedidos en Línea</h3>
+          <p>Fast Food Pachuca, tipo Rappi y para varios restaurantes: carrito de varias tiendas, cupones, estado del pedido en vivo, carta en PDF, avisos por WhatsApp y panel por negocio. Desplegada en AWS EC2 + RDS.</p>
           <div class="tags"><span>PHP</span><span>SOAP / REST</span><span>MySQL</span><span>PWA</span></div>
         </div>
       </div>
       <div class="proj">
-        <div style="aspect-ratio:16/10;border-radius:8px;border:1.5px solid var(--line);background:linear-gradient(135deg,#1a1240,#4c1d95);display:grid;place-items:center;color:#fff;font-weight:800;font-size:20px;box-shadow:0 3px 10px #4c1d9522">Kai&nbsp;<span style="font-size:11px;font-weight:500;color:#c4b5fd">IA</span></div>
+        <div class="thumb" style="background:linear-gradient(135deg,#25155f,#7c3aed);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:26px;line-height:1">Kai<span style="font-size:10px;font-weight:600;color:#ddd6fe;margin-top:4px">asistente IA</span></div>
         <div>
-          <h3>Kai · asistente personal con IA</h3>
-          <p>Asistente de uso diario: servidor Node.js con Claude Agent SDK y herramientas MCP que hice yo (tareas, recordatorios al celular, notas en Obsidian, voz con Gemini y control de Android). Lo abro desde cualquier lugar por Tailscale.</p>
+          <h3>Asistente Inteligente Personal (Kai)</h3>
+          <p>Agente de IA de uso diario: servidor Node.js con Claude Agent SDK y herramientas MCP propias (tareas, recordatorios al celular, notas, voz con Gemini y control de Android), con acceso remoto seguro por Tailscale.</p>
           <div class="tags"><span>Node.js</span><span>Agentes IA</span><span>MCP</span><span>Automatización</span></div>
         </div>
       </div>
     </section>
 
     <section>
-      <h2><svg viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg>FORMACIÓN ACADÉMICA</h2>
+      <h2><svg viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg>Formación académica</h2>
       <div class="edu">
         <h3>Ingeniería en Sistemas Computacionales</h3>
-        <p>Tecnológico Nacional de México · Campus Pachuca — 9.º semestre (en curso)</p>
+        <p>Tecnológico Nacional de México – Campus Pachuca</p>
       </div>
     </section>
   </main>
 
   <div class="bottom">
     <div>
-      <h4><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></svg>FORMACIÓN COMPLEMENTARIA</h4>
-      <ul><li>Curso de Redes · Cisco Networking Academy (2026)</li><li>Laboratorios de AWS Academy: EC2 y RDS</li><li>Más proyectos: control de clientes para un ISP familiar (Node.js + PostgreSQL)</li></ul>
+      <h4><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></svg>Certificaciones<br><span style="font-weight:500;text-transform:none;font-size:11px">(Complementarias)</span></h4>
+      <ul><li>Redes · Cisco Networking Academy</li><li>AWS Academy · EC2 y RDS</li></ul>
     </div>
     <div>
-      <h4><svg viewBox="0 0 24 24"><path d="M4 5h8M8 3v2M5 9c2 4 5 6 8 7M11 5c-1 5-4 9-7 11M13 21l4-10 4 10M14.5 18h5"/></svg>IDIOMAS</h4>
-      <ul><li>Español: nativo</li><!-- INGLÉS: pendiente que Juan diga su nivel --></ul>
+      <h4><svg viewBox="0 0 24 24"><path d="M4 5h8M8 3v2M5 9c2 4 5 6 8 7M11 5c-1 5-4 9-7 11M13 21l4-10 4 10M14.5 18h5"/></svg>Idiomas</h4>
+      <ul><li>Español – Nativo</li><!-- INGLÉS: pendiente que Juan diga su nivel --></ul>
     </div>
     <div>
-      <h4><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20a6 6 0 0 1 12 0M15 20a4 4 0 0 1 7-2.6"/></svg>HABILIDADES</h4>
-      <ul><li>Resolución de problemas</li><li>Aprendizaje autodidacta</li><li>Trabajo en equipo</li><li>Responsabilidad y constancia</li></ul>
+      <h4><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20a6 6 0 0 1 12 0M15 20a4 4 0 0 1 7-2.6"/></svg>Habilidades<br>interpersonales</h4>
+      <ul><li>Trabajo en equipo</li><li>Comunicación efectiva</li><li>Resolución de problemas</li><li>Aprendizaje continuo</li><li>Proactividad y responsabilidad</li></ul>
     </div>
   </div>
 </div>
