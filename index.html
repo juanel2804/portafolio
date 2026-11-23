@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juan Elpidio López García | Portafolio</title>
+<meta name="description" content="Estudiante de Ingeniería en Sistemas Computacionales (TecNM Pachuca). Desarrollo web full-stack, IoT, nube en AWS e IA aplicada. Buscando residencia profesional.">
+<meta property="og:title" content="Juan Elpidio López García | Portafolio">
+<meta property="og:description" content="Full-stack · IoT · AWS · IA aplicada. Proyectos desplegados y funcionando.">
+<meta property="og:image" content="assets/img/excavadora.png">
+<meta name="theme-color" content="#07090c">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Intro tipo terminal (se puede saltar) -->
+<div id="boot" aria-hidden="true">
+  <div class="boot-box">
+    <pre id="boot-text"></pre>
+    <button id="boot-skip" class="btn-ghost mono">Saltar / Skip</button>
+  </div>
+</div>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="nav">
+  <a href="#inicio" class="logo mono">&lt;Juan<span>/&gt;</span></a>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#sobre">Sobre mí</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#formacion">Formación</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <a href="cv.pdf" class="btn-ghost mono small" download>CV ↓</a>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+  <div class="hero-text reveal">
+    <p class="eyebrow mono">HOLA, SOY</p>
+    <h1 class="grad">Juan Elpidio<br>López García</h1>
+    <h2>Desarrollador Full-Stack · IoT · Cloud</h2>
+    <p class="lead">Construyo aplicaciones web que se conectan con el mundo real: APIs en AWS, dispositivos IoT en tiempo real y asistentes con inteligencia artificial.</p>
+    <p class="status mono"><span class="dot"></span> Buscando residencia profesional</p>
+    <div class="cta">
+      <a href="#proyectos" class="btn">Ver proyectos</a>
+      <a href="#contacto" class="btn-ghost">Contáctame</a>
+    </div>
+  </div>
+  <div class="hero-card reveal">
+    <div class="term">
+      <div class="term-bar"><i></i><i></i><i></i><span class="mono">juan@pachuca: ~</span></div>
+<pre class="mono"><span class="c">$</span> whoami
+Juan Elpidio López García
+<span class="c">$</span> cat perfil.json
+{
+  <span class="k">"carrera"</span>: <span class="s">"Ing. en Sistemas Computacionales"</span>,
+  <span class="k">"escuela"</span>: <span class="s">"TecNM Campus Pachuca"</span>,
+  <span class="k">"semestre"</span>: <span class="s">"9.º"</span>,
+  <span class="k">"enfoque"</span>: [<span class="s">"web"</span>, <span class="s">"iot"</span>, <span class="s">"aws"</span>, <span class="s">"ia"</span>],
+  <span class="k">"disponible"</span>: <span class="b">true</span>
+}
+<span class="c">$</span> <span class="cursor">▍</span></pre>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE MÍ -->
+<section id="sobre">
+  <h2 class="sec reveal">Sobre mí</h2>
+  <p class="sub reveal">Mi perfil, las herramientas que uso y lo que estoy construyendo.</p>
+
+  <div class="bento">
+    <article class="card perfil reveal">
+      <div class="avatar mono" aria-label="Foto de perfil">JL</div>
+      <p class="eyebrow mono">PERFIL</p>
+      <h3>Juan Elpidio López García</h3>
+      <p class="muted">Estudiante de 9.º semestre de Ingeniería en Sistemas Computacionales. Me gusta llevar los proyectos de punta a punta: base de datos, API, interfaz y despliegue en la nube. Llevo la IA a proyectos prácticos y me organizo con mi propio asistente.</p>
+      <div class="links">
+        <a class="chip" href="https://www.linkedin.com/in/juan-elpidio-l%C3%B3pez-garc%C3%ADa-96310934a" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="chip" href="https://github.com/juanel2804" target="_blank" rel="noopener">GitHub</a>
+        <a class="chip" href="cv.pdf" download>Descargar CV</a>
+      </div>
+    </article>
+
+    <article class="card stack reveal">
+      <p class="eyebrow mono">STACK TÉCNICO</p>
+      <div class="grid-stack">
+        <span>HTML · CSS · JS</span><span>Bootstrap · Tailwind</span><span>PHP · SOAP · REST</span>
+        <span>Python · FastAPI</span><span>Node.js · Express</span><span>MySQL · PostgreSQL</span>
+        <span>AWS EC2 · RDS</span><span>WebSocket · WSS</span><span>ESP32 · IoT</span>
+        <span>Three.js · WebXR</span><span>Git · GitHub</span><span>Claude · Gemini · MCP</span>
+      </div>
+    </article>
+
+    <article class="card reveal">
+      <p class="eyebrow mono">UBICACIÓN</p>
+      <h3>Pachuca de Soto</h3>
+      <p class="muted">Hidalgo, México</p>
+      <p class="clock mono" id="clock">--:--</p>
+    </article>
+
+    <article class="card reveal">
+      <p class="eyebrow mono">ACTUALMENTE</p>
+      <p>Cursando el último semestre en el <b>TecNM Campus Pachuca</b> y buscando una <b>residencia profesional</b> en desarrollo de software, nube o IoT.</p>
+    </article>
+
+    <article class="card wide3 reveal">
+      <p class="eyebrow mono">FUERA DEL CÓDIGO</p>
+      <p class="muted">Entrenamiento de fuerza, aprender sobre mercados e inversión, y conocer gente nueva.</p>
+    </article>
+  </div>
+</section>
+
+<!-- PROYECTOS -->
+<section id="proyectos">
+  <h2 class="sec reveal">Proyectos</h2>
+  <p class="sub reveal">Proyectos completos, de la base de datos al despliegue. Los que tienen <span class="mono acc">Demo</span> se pueden probar en vivo.</p>
+
+  <div class="projects">
+
+    <article class="proj feat reveal">
+      <a class="shot" href="https://juanel2804.github.io/control-iot/" target="_blank" rel="noopener"><img src="assets/img/excavadora.png" alt="App de control de la Excavadora IoT con joysticks" loading="lazy"></a>
+      <div class="body">
+        <p class="eyebrow mono">IoT · CLOUD · TIEMPO REAL</p>
+        <h3>Excavadora IoT controlada desde internet</h3>
+        <p>Una app web instalable (PWA) manda órdenes por <b>WebSocket seguro</b> a una API en <b>AWS</b>, y un <b>ESP32</b> mueve la excavadora real. También tiene monitoreo en vivo, gemelo digital 3D, copiloto con IA por voz, control por gestos y realidad virtual (WebXR).</p>
+        <ul class="tags mono"><li>JavaScript</li><li>WebSocket</li><li>FastAPI</li><li>AWS EC2 + RDS</li><li>ESP32</li><li>WebXR</li></ul>
+        <div class="actions">
+          <a class="btn small" href="https://juanel2804.github.io/control-iot/" target="_blank" rel="noopener">Demo</a>
+          <a class="btn-ghost small" href="https://github.com/juanel2804/control-iot" target="_blank" rel="noopener">Código</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj reveal">
+      <a class="shot" href="https://juanel2804.github.io/vehiculo-iot-api/" target="_blank" rel="noopener"><img src="assets/img/retrox.png" alt="Panel RETRO-X con simulación 3D del vehículo" loading="lazy"></a>
+      <div class="body">
+        <p class="eyebrow mono">BACKEND · API REST</p>
+        <h3>API del vehículo IoT en AWS</h3>
+        <p>API en <b>Python + FastAPI</b> con POO: 21 servicios REST sobre procedimientos almacenados en <b>Amazon RDS</b>. Desplegada en <b>EC2</b> con HTTPS/WSS (Caddy + Let's Encrypt), documentación Swagger y reinicio automático.</p>
+        <ul class="tags mono"><li>Python</li><li>FastAPI</li><li>MySQL</li><li>Caddy</li><li>Swagger</li></ul>
+        <div class="actions">
+          <a class="btn small" href="https://juanel2804.github.io/vehiculo-iot-api/" target="_blank" rel="noopener">Demo</a>
+          <a class="btn-ghost small" href="https://github.com/juanel2804/vehiculo-iot-api" target="_blank" rel="noopener">Código</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj reveal">
+      <div class="shot"><img src="assets/img/fastfood.png" alt="Página de inicio de Fast Food Pachuca" loading="lazy"></div>
+      <div class="body">
+        <p class="eyebrow mono">FULL-STACK · E-COMMERCE</p>
+        <h3>Fast Food Pachuca</h3>
+        <p>Plataforma de pedidos para varios restaurantes, tipo Rappi. Tiene carrito de varias tiendas, cupones, propina, estado del pedido en vivo, carta en PDF, avisos por WhatsApp y panel para cada negocio. La desplegamos en <b>AWS EC2 + RDS</b>. Proyecto en equipo.</p>
+        <ul class="tags mono"><li>PHP</li><li>SOAP</li><li>REST</li><li>MySQL</li><li>PWA</li></ul>
+        <div class="actions"><span class="note mono">Demo en vivo bajo solicitud</span></div>
+      </div>
+    </article>
+
+    <article class="proj reveal">
+      <div class="shot mock" aria-hidden="true">
+        <div class="mock-chat">
+          <div class="m-side"><b class="mono">Kai</b><span>💬 General</span><span>🎓 Universidad</span><span>⏰ Recordatorios</span></div>
+          <div class="m-main">
+            <p class="m-u">recuérdame mañana a las 3 entregar el reporte</p>
+            <p class="m-a">Listo ✅ Te llega al celular mañana a las 15:00.</p>
+            <p class="m-u">buenos días</p>
+            <p class="m-a">Tus pendientes de hoy y el clima de Pachuca ☀️</p>
+          </div>
+        </div>
+      </div>
+      <div class="body">
+        <p class="eyebrow mono">IA · AGENTES · AUTOMATIZACIÓN</p>
+        <h3>Kai: mi asistente personal con IA</h3>
+        <p>Asistente que uso todos los días, con chats separados por tema. Usa <b>Node.js + Express + WebSocket</b> con el <b>Claude Agent SDK</b> y herramientas <b>MCP</b> que hice yo: tareas, recordatorios al celular (ntfy), notas en Obsidian, voz con Gemini y control de Android. Lo abro desde cualquier lugar con Tailscale.</p>
+        <ul class="tags mono"><li>Node.js</li><li>Claude Agent SDK</li><li>MCP</li><li>Gemini</li><li>Tailscale</li></ul>
+        <div class="actions"><span class="note mono">Código privado · demo bajo solicitud</span></div>
+      </div>
+    </article>
+
+    <article class="proj reveal">
+      <div class="shot mock isp" aria-hidden="true">
+        <div class="isp-grid">
+          <div><small>Clientes</small><b>34</b></div>
+          <div><small>Pagos</small><b>156</b></div>
+          <div><small>Roles</small><b>3</b></div>
+          <div class="wide"><small>Auditoría</small><span class="mono">admin registró pago · 10:24</span></div>
+        </div>
+      </div>
+      <div class="body">
+        <p class="eyebrow mono">SISTEMA REAL · BACKEND</p>
+        <h3>Control de clientes de internet</h3>
+        <p>Sistema web para el negocio familiar de internet: clientes con IP/MAC, pagos mensuales, equipos de red y bitácora de auditoría. Tiene 3 roles, contraseñas cifradas con scrypt y bloqueo tras varios intentos fallidos. Pasé los datos del Excel: 34 clientes y 156 pagos.</p>
+        <ul class="tags mono"><li>Node.js</li><li>PostgreSQL</li><li>Seguridad</li><li>Roles</li></ul>
+        <div class="actions"><span class="note mono">Código privado (datos reales)</span></div>
+      </div>
+    </article>
+
+    <article class="proj reveal">
+      <a class="shot" href="https://juanel2804.github.io/supervillanos-difuso/web/index.html" target="_blank" rel="noopener"><img src="assets/img/supervillanos.png" alt="Portada del sistema experto ¿Quién es el supervillano?" loading="lazy"></a>
+      <div class="body">
+        <p class="eyebrow mono">INTELIGENCIA ARTIFICIAL</p>
+        <h3>¿Quién es el supervillano?</h3>
+        <p>Sistema experto en <b>Prolog</b> con <b>lógica difusa</b> (Mamdani): cada pista tiene un grado de verdad y cada sospechoso es culpable "en cierto grado". Tiene interfaz web y presentación interactiva. Proyecto en equipo.</p>
+        <ul class="tags mono"><li>Prolog</li><li>Lógica difusa</li><li>Python</li><li>HTML/CSS</li></ul>
+        <div class="actions">
+          <a class="btn small" href="https://juanel2804.github.io/supervillanos-difuso/web/index.html" target="_blank" rel="noopener">Demo</a>
+          <a class="btn-ghost small" href="https://github.com/juanel2804/supervillanos-difuso" target="_blank" rel="noopener">Código</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+  <p class="foot-note muted mono reveal">* La API del vehículo corre en un laboratorio de AWS Academy. Si el laboratorio está apagado, las demos entran en modo simulador.</p>
+</section>
+
+<!-- FORMACIÓN -->
+<section id="formacion">
+  <h2 class="sec reveal">Formación</h2>
+  <div class="timeline">
+    <div class="tl reveal">
+      <p class="eyebrow mono">EN CURSO · 9.º SEMESTRE</p>
+      <h3>Ingeniería en Sistemas Computacionales</h3>
+      <p class="muted">Tecnológico Nacional de México · Campus Pachuca</p>
+    </div>
+    <div class="tl reveal">
+      <p class="eyebrow mono">2026</p>
+      <h3>Curso de Redes · Cisco Networking Academy</h3>
+      <p class="muted">Completado en noviembre de 2026. En la carrera: VLAN, STP y enrutamiento con equipo Cisco.</p>
+    </div>
+    <div class="tl reveal">
+      <p class="eyebrow mono">2026</p>
+      <h3>Laboratorios de AWS Academy</h3>
+      <p class="muted">Despliegue de aplicaciones reales en EC2 y Amazon RDS.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="contact reveal">
+  <h2 class="sec">Contacto</h2>
+  <p class="sub">¿Tienes una vacante de residencia o un proyecto? Escríbeme.</p>
+  <a class="mail mono grad" href="mailto:juanelpidio2004@gmail.com">juanelpidio2004@gmail.com</a>
+  <div class="cta center">
+    <a class="btn" href="https://www.linkedin.com/in/juan-elpidio-l%C3%B3pez-garc%C3%ADa-96310934a" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn-ghost" href="https://github.com/juanel2804" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn-ghost" href="cv.pdf" download>Descargar CV</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer mono">
+  <span>© 2026 Juan Elpidio López García · Pachuca, México</span>
+  <span>Hecho a mano con HTML, CSS y JavaScript</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
