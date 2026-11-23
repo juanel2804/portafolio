@@ -245,3 +245,10 @@ dialog.sin-fotos .f-galeria{display:none}
   .f-galeria{border-right:0;border-bottom:1px solid var(--line)}
 }
 @media (max-width:560px){.skills{grid-template-columns:1fr}.stats{gap:1.4rem}.f-thumbs{grid-template-columns:repeat(3,1fr)}.deck-card{width:88%}}
+
+/* foto en el hero */
+.hola{display:flex;align-items:center;gap:.9rem;margin-bottom:1.2rem}
+.hola img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid #fff;box-shadow:0 0 0 3px var(--c1),0 10px 30px -8px #3b82f6}
+.hola .eyebrow{margin:0 0 .15rem}
+.hola span{display:flex;align-items:center;gap:.45rem;font-size:.85rem;color:var(--tx2)}
+.hola span i{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px #22c55e2a}
