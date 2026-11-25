@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>CV · Juan Elpidio López García</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b1d45;--azul:#1d4ed8;--cian:#38bdf8;--tx:#141a2e;--mu:#4a5170;--line:#dbe4f5;--soft:#eef4ff}
+@page{size:Letter;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#fff}
+body{font-family:Inter,sans-serif;color:var(--tx);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:8.5in;height:11in;overflow:hidden;position:relative;display:flex;flex-direction:column;background:#fff}
+
+/* encabezado */
+header{flex:none;position:relative;background:linear-gradient(120deg,var(--navy) 0%,#12306f 60%,var(--azul) 100%);color:#fff;padding:.26in .5in .24in;display:flex;align-items:center;gap:.3in;overflow:hidden}
+header::after{content:"";position:absolute;right:-.6in;top:-.9in;width:3.2in;height:3.2in;border-radius:50%;background:radial-gradient(circle,#38bdf855,transparent 70%)}
+.foto{flex:none;width:1.25in;height:1.25in;border-radius:50%;border:4px solid #fff;box-shadow:0 0 0 3px var(--cian),0 8px 24px #0006;overflow:hidden;background:linear-gradient(135deg,#2563eb,#38bdf8);position:relative;z-index:1}
+.foto img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.head-txt{position:relative;z-index:1}
+.nombre{font-size:32px;font-weight:900;letter-spacing:-.02em;line-height:1.05}
+.rol{margin-top:8px;font-size:14px;font-weight:600;color:var(--cian);letter-spacing:.02em}
+.contacto{list-style:none;display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:14px;font-size:10px;color:#e2ecff}
+.contacto li{display:flex;align-items:center;gap:6px}
+.contacto svg{width:13px;height:13px;stroke:var(--cian);stroke-width:2;fill:none;flex:none}
+.contacto a{color:#e2ecff;text-decoration:none}
+
+/* cuerpo */
+.cuerpo{flex:1;display:grid;grid-template-columns:1fr 2.5in;gap:.28in;padding:.2in .5in .14in}
+h2{font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--azul);display:flex;align-items:center;gap:8px;margin-bottom:9px}
+h2::after{content:"";flex:1;height:1.5px;background:var(--line)}
+section+section{margin-top:.18in}
+.perfil{font-size:11px;line-height:1.6;color:var(--mu)}
+.perfil b{color:var(--azul);font-weight:700}
+.obj{font-size:10px;line-height:1.5;color:var(--mu);background:var(--soft);border-left:3px solid var(--azul);padding:9px 12px;border-radius:0 8px 8px 0}
+
+/* proyectos */
+.proy{position:relative;padding:9px 0 9px 14px;border-left:2px solid var(--line)}
+.proy+.proy{border-top:none}
+.proy::before{content:"";position:absolute;left:-6px;top:13px;width:10px;height:10px;border-radius:50%;background:var(--azul);box-shadow:0 0 0 3px #dbeafe}
+.proy{display:grid;grid-template-columns:1.25in 1fr;gap:12px;align-items:center}
+.th{border-radius:8px;border:1px solid var(--line);overflow:hidden;aspect-ratio:16/10;box-shadow:0 3px 10px #0b1d4525}
+.th img{width:100%;height:100%;object-fit:cover;object-position:top}
+.th.ph{background:linear-gradient(135deg,var(--navy),var(--azul));color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.th.ph b{font-size:20px;font-weight:900}.th.ph span{font-size:8.5px;color:#bfdbfe;margin-top:3px}
+.proy h3{font-size:12px;font-weight:800;color:var(--navy);line-height:1.25}
+.proy p{font-size:10px;line-height:1.5;color:var(--mu);margin:3px 0 6px}
+.tags{display:flex;flex-wrap:wrap;gap:4px}
+.tags span{font-size:8.6px;font-weight:700;padding:2px 8px;border-radius:5px;background:var(--soft);color:var(--azul)}
+
+/* educación */
+.edu h3{font-size:11.5px;font-weight:800;color:var(--navy)}
+.edu p{font-size:10px;color:var(--mu);margin-top:2px}
+
+/* columna lateral */
+aside .bloque+.bloque{margin-top:.13in}
+.comp{display:grid;gap:5px}
+.comp>div{background:#fff;border:1px solid var(--line);border-radius:9px;padding:7px 9px;border-top:3px solid var(--azul)}
+.comp h4{font-size:10px;font-weight:800;color:var(--navy);margin-bottom:2px}
+.comp p{font-size:9.2px;line-height:1.42;color:var(--mu)}
+aside ul{list-style:none;font-size:10px;color:var(--mu);display:grid;gap:5px}
+aside li{display:flex;gap:7px;line-height:1.35}
+aside li::before{content:"";flex:none;width:6px;height:6px;margin-top:4px;border-radius:50%;background:var(--cian)}
+.idioma{display:flex;justify-content:space-between;font-size:10px;color:var(--tx);font-weight:600}
+.idioma span:last-child{color:var(--azul);font-weight:700}
+.barra{height:4px;background:var(--line);border-radius:3px;margin:4px 0 7px;overflow:hidden}
+.barra i{display:block;height:100%;background:linear-gradient(90deg,var(--azul),var(--cian));border-radius:3px}
+
+/* pie */
+footer{flex:none;background:var(--navy);color:#cfe0ff;font-size:9px;letter-spacing:.08em;text-transform:uppercase;padding:.11in .5in;display:flex;justify-content:space-between;align-items:center}
+footer b{color:var(--cian)}
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="foto"><img src="assets/img/foto.jpg" alt="Juan Elpidio López García"></div>
+    <div class="head-txt">
+      <div class="nombre">Juan Elpidio López García</div>
+      <div class="rol">Ingeniero en Sistemas Computacionales · Full-Stack · IoT · AWS · IA aplicada</div>
+      <ul class="contacto">
+        <li><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:juanelpidio2004@gmail.com">juanelpidio2004@gmail.com</a></li>
+        <li><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Pachuca, Hgo., México</li>
+        <li><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg><a href="https://www.linkedin.com/in/juan-elpidio-l%C3%B3pez-garc%C3%ADa-96310934a">linkedin.com/in/juan-elpidio-lópez-garcía</a></li>
+        <li><svg viewBox="0 0 24 24"><path d="M9 19c-4 1.3-4-2-6-2.5m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg><a href="https://github.com/juanel2804">github.com/juanel2804</a></li>
+        <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><a href="https://juanelpidiolopez.vercel.app/">juanelpidiolopez.vercel.app</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="cuerpo">
+    <main>
+      <section>
+        <h2>Perfil profesional</h2>
+        <p class="perfil">Ingeniero en Sistemas Computacionales enfocado en <b>desarrollo full-stack</b>, <b>nube en AWS</b> e <b>Internet de las Cosas</b>. Construyo soluciones completas: base de datos, APIs REST y WebSocket, interfaces web y despliegue en producción. Integro <b>inteligencia artificial generativa, agentes y automatización</b> en proyectos reales. Me destaco por resolver problemas, aprender rápido y entregar soluciones que funcionan.</p>
+      </section>
+
+      <section>
+        <h2>Proyectos destacados</h2>
+        <div class="proy">
+<div class="th"><img src="assets/img/excavadora.png" alt=""></div><div>
+          <h3>Excavadora IoT · Control remoto en tiempo real</h3>
+          <p>PWA que envía comandos por WebSocket seguro a una API FastAPI en AWS EC2 (21 servicios REST sobre Amazon RDS); un ESP32 ejecuta los movimientos. Monitoreo en vivo, gemelo digital 3D, voz con IA y realidad virtual.</p>
+          <div class="tags"><span>FastAPI</span><span>WebSocket</span><span>AWS</span><span>ESP32</span></div></div>
+        </div>
+        <div class="proy">
+<div class="th"><img src="assets/img/fastfood.png" alt=""></div><div>
+          <h3>Fast Food Pachuca · Plataforma de pedidos</h3>
+          <p>Pedidos en línea multirestaurante: carrito multitienda, cupones, seguimiento en tiempo real, carta PDF, avisos por WhatsApp y panel por negocio. Desplegada en AWS EC2 + RDS.</p>
+          <div class="tags"><span>PHP</span><span>SOAP / REST</span><span>MySQL</span><span>AWS</span></div></div>
+        </div>
+        <div class="proy">
+<div class="th ph"><b>Kai</b><span>asistente IA</span></div><div>
+          <h3>Kai · Asistente inteligente personal</h3>
+          <p>Agente de IA en Node.js con Claude Agent SDK y herramientas MCP propias: tareas, recordatorios al celular, notas, voz con Gemini y control de Android.</p>
+          <div class="tags"><span>Node.js</span><span>Agentes IA</span><span>MCP</span></div></div>
+        </div>
+        <div class="proy">
+<div class="th ph"><b>Gym</b><span>gestión · NFC</span></div><div>
+          <h3>Sistema de administración de gimnasio</h3>
+          <p>Miembros, pagos, control de accesos con validación NFC y panel de indicadores. API Node.js/Express con JWT y PostgreSQL en la nube.</p>
+          <div class="tags"><span>Node.js</span><span>PostgreSQL</span><span>JWT</span><span>NFC</span></div></div>
+        </div>
+      </section>
+
+      <section class="edu">
+        <h2>Formación académica</h2>
+        <h3>Ingeniería en Sistemas Computacionales</h3>
+        <p>Tecnológico Nacional de México – Campus Pachuca</p>
+      </section>
+    </main>
+
+    <aside>
+      <div class="bloque">
+        <h2>Objetivo</h2>
+        <p class="obj">Crear soluciones tecnológicas que resuelvan problemas reales, desde la base de datos hasta la nube, y sumar a equipos que construyen productos de impacto mientras sigo creciendo profesionalmente.</p>
+      </div>
+
+      <div class="bloque">
+        <h2>Competencias técnicas</h2>
+        <div class="comp">
+          <div><h4>Desarrollo Web y Frontend</h4><p>HTML5, CSS3, JavaScript (ES6+), Bootstrap 5, Tailwind CSS, Three.js, PWA.</p></div>
+          <div><h4>Backend y APIs</h4><p>Python (FastAPI), Node.js (Express), PHP, REST, SOAP, WebSocket.</p></div>
+          <div><h4>Bases de Datos y Nube</h4><p>MySQL (procedimientos y vistas), PostgreSQL, AWS EC2 y Amazon RDS.</p></div>
+          <div><h4>Herramientas de Desarrollo</h4><p>Git, GitHub, VS Code, Postman, Swagger, despliegue en Vercel y GitHub Pages.</p></div>
+          <div><h4>Redes e IoT</h4><p>ESP32, VLAN, STP, Cisco Packet Tracer, comunicación en tiempo real.</p></div>
+          <div><h4>IA y Automatización</h4><p>IA generativa, agentes (Claude Agent SDK, MCP), APIs de Gemini y OpenAI, Prolog, Weka.</p></div>
+        </div>
+      </div>
+
+      <div class="bloque">
+        <h2>Certificaciones</h2>
+        <ul>
+          <li>Redes · Cisco Networking Academy</li>
+          <li>AWS Academy · EC2 y RDS</li>
+        </ul>
+      </div>
+
+      <div class="bloque">
+        <h2>Idiomas</h2>
+        <div class="idioma"><span>Español</span><span>Nativo</span></div>
+        <div class="barra"><i style="width:100%"></i></div>
+        <div class="idioma"><span>Inglés</span><span>B2 · Intermedio alto</span></div>
+        <div class="barra"><i style="width:75%"></i></div>
+      </div>
+
+      <div class="bloque">
+        <h2>Habilidades</h2>
+        <ul>
+          <li>Trabajo en equipo</li>
+          <li>Comunicación efectiva</li>
+          <li>Resolución de problemas</li>
+          <li>Aprendizaje continuo</li>
+          <li>Proactividad y responsabilidad</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    <span>Portafolio · juanelpidiolopez.vercel.app</span>
+    <b>Disponible para residencias y empleo</b>
+  </footer>
+</div>
+</body>
+</html>
