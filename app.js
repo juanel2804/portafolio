@@ -50,7 +50,7 @@ function pintarFoto() {
   [...$('f-thumbs').children].forEach((t, i) => t.classList.toggle('on', i === idx));
 }
 function abrir(k, foto = 0) {
-  actual = PROY[k]; idx = foto;
+  actual = I18N.proy(k, PROY[k]); idx = foto;
   $('f-cat').textContent = actual.cat; $('f-titulo').textContent = actual.titulo; $('f-desc').textContent = actual.desc;
   $('f-puntos').innerHTML = actual.puntos.map(p => `<li>${p}</li>`).join('');
   $('f-tags').innerHTML = actual.tags.map(t => `<li>${t}</li>`).join('');
@@ -124,11 +124,14 @@ document.querySelectorAll('.filtros button').forEach(b => b.onclick = () => {
 // ===== Rol que se escribe solo =====
 (() => {
   const el = document.getElementById('typed');
-  const roles = ['Desarrollo Full-Stack', 'Soluciones IoT en tiempo real', 'Arquitectura en la nube (AWS)', 'Inteligencia artificial aplicada'];
+  const ROLES_ES = ['Desarrollo Full-Stack', 'Soluciones IoT en tiempo real', 'Arquitectura en la nube (AWS)', 'Inteligencia artificial aplicada'];
+  const rolesAct = () => I18N.roles(ROLES_ES);
+  let roles = ROLES_ES;
   let r = 0, c = roles[0].length, borrando = true;
   const paso = () => {
     if (borrando) { c--; if (c <= 0) { borrando = false; r = (r + 1) % roles.length; } }
     else { c++; if (c >= roles[r].length) { borrando = true; return setTimeout(paso, 2000); } }
+    roles = rolesAct(); if (r >= roles.length) r = 0;
     el.textContent = roles[r].slice(0, c);
     setTimeout(paso, borrando ? 30 : 65);
   };
@@ -174,12 +177,18 @@ deck?.addEventListener('pointerleave', () => { deck.style.setProperty('--rx', '0
 
 // Reloj de Pachuca
 const clock = document.getElementById('clock');
-const hora = () => clock.textContent = new Date().toLocaleTimeString('es-MX', { timeZone: 'America/Mexico_City', hour: '2-digit', minute: '2-digit' });
+const hora = () => clock.textContent = new Date().toLocaleTimeString(I18N.lang === 'en' ? 'en-US' : 'es-MX', { timeZone: 'America/Mexico_City', hour: '2-digit', minute: '2-digit' });
 hora(); setInterval(hora, 20000);
 
 // Copiar correo
 document.getElementById('copiar').onclick = async e => {
   const b = e.currentTarget, s = b.querySelector('.copy');
-  try { await navigator.clipboard.writeText(b.dataset.mail); s.textContent = '¡copiado!'; } catch { location.href = 'mailto:' + b.dataset.mail; }
-  setTimeout(() => s.textContent = 'copiar', 1800);
+  try { await navigator.clipboard.writeText(b.dataset.mail); s.textContent = I18N.texto.copiado(); } catch { location.href = 'mailto:' + b.dataset.mail; }
+  setTimeout(() => s.textContent = I18N.texto.copiar(), 1800);
 };
+
+// ===== Idioma ES / EN =====
+I18N.iniciar();
+document.getElementById('lang-btn').onclick = () => { if (dlg.open) dlg.close(); I18N.alternar(); };
+let guardado = null; try { guardado = localStorage.getItem('lang'); } catch { }
+if (guardado === 'en') I18N.aplicar('en');

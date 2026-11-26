@@ -252,3 +252,8 @@ dialog.sin-fotos .f-galeria{display:none}
 .hola .eyebrow{margin:0 0 .15rem}
 .hola span{display:flex;align-items:center;gap:.45rem;font-size:.85rem;color:var(--tx2)}
 .hola span i{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px #22c55e2a}
+
+/* ---------- selector de idioma ---------- */
+.nav-der{display:flex;align-items:center;gap:.6rem}
+.lang-btn{font-size:.8rem;font-weight:600;letter-spacing:.06em;color:var(--tx);background:#0b1527aa;border:1px solid var(--line);border-radius:999px;padding:.45rem .85rem;cursor:pointer;backdrop-filter:blur(10px);transition:.2s}
+.lang-btn:hover{border-color:#3b82f6;color:#fff;background:#3b82f622}
